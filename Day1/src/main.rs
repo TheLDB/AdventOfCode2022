@@ -47,11 +47,11 @@ fn part_two() -> i32 {
 
     let mut cal_vec: Vec<i32> = Vec::new();
 
-    for(index, element) in input_arr.enumerate() {
+    for (_, element) in input_arr.enumerate() {
 
         let mut total_cals_for_chunk: i32 = 0;
 
-        for(index, element) in element.split("\n").enumerate() {
+        for(_, element) in element.split("\n").enumerate() {
             let num_element: i32 = element.parse().unwrap();
             total_cals_for_chunk += num_element;
         }
